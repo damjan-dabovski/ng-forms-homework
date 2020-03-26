@@ -1,0 +1,12 @@
+<ul>
+    <li *ngFor="let person of people">
+        <span>{{person.firstName}} — </span>
+        <button (click)= "editPerson(person.id)">Edit</button>
+        <button (click) = "deletePerson(person.id)">Delete</button>
+    </li>
+</ul>
+<br>
+<a routerLink="/step1">Add new User</a>
+<br><br>
+<button (click)="addMockUser()">Add Mock User</button>
+<button (click)="logUsers()">Log Users</button>
